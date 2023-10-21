@@ -1,0 +1,133 @@
+settings:
+  bot-token: ""
+  console-msg: true
+
+timely-getter:
+  cooldown: 3600
+  coins: 130
+
+voice-getter:
+  default:
+    cooldown: 3600
+    coins: 20
+  random:
+    enable: true
+    min-coins: 5
+    max-coins: 20
+
+chat-getter:
+  default:
+    symbols: 23
+    coins: 20
+  count:
+    enable: true
+    symbols: 23
+    stabilizer: 50
+    multiplier: 500
+  black_words: ["лох; 1.8", "тупой; 1.0", "говно; 0.3", "https://; 2.0"]
+
+time-formatted:
+  days: [" день, ", " дні, "," днів, "]
+  hours: [" година, ", " години, ", " годин, "]
+  minutes: [" хвилина, ", " хвилини, ", " хвилин, "]
+  seconds: [" секунда.", " секунди.", " секунд."]
+
+#transfer-menu:
+#  arrow: 5
+#  color: "#00ff00"
+#  formatted: "{number}. {amount} -> {user}, {datatime}"
+#  button-next: "Следуйщий ->"
+#  button-exit: "Предудущий <-"
+
+pay-menu:
+  color: "#00ff00"
+  time: 10
+  title: "📍 Передача: ``{amount}`` 💎"
+  user: "Передайот"
+  target: "Получает"
+  icon-avatar: true
+  default-avatar: "https://cdn3.iconfinder.com/data/icons/accounting-22/50/38-1024.png"
+  button-confirm:
+    lable: "Подтвердить"
+    # primary, green, red, gray
+    style: "green"
+  button-center:
+    enable: true
+    lable: "⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ ⁪ "
+  button-cancel:
+    lable: "Отклонить"
+    style: "red"
+
+messages:
+  balance-me:
+    color: "#00ff00"
+    text:
+      - "Ваш баланс: {balance}"
+  balance-target:
+    color: "#00ff00"
+    text:
+      - "Баланс игрока {target} составляєт {balance}"
+  timely-me:
+    color: "#00ff00"
+    text:
+      - "Ви получили подарок: {amount} 💎 наступний подарок через ``12 години.``"
+  timely-cooldown:
+    color: "#00ff00"
+    text:
+      - "Ви вже получили свій подарок, наступний подарок через ``{cooldown}``"
+  pay-me:
+    color: "#00ff00"
+    text:
+      - "Ви передали {amount} 💎 пользователю {target} ваш баланс тепер {balance} 💎"
+  pay-target:
+    color: "#00ff00"
+    text:
+      - "Пользователь {target} передав вам {amount} 💎 ваш баланс тепер {balance} 💎"
+  pay-cancel:
+    color: "#00ff00"
+    text:
+      - "Ви успішно відмінили передачу {amount} 💎"
+  pay-no:
+    color: "#00ff00"
+    text:
+      - "У вас не достатньо алмазів ваш баланс {balance} 💎 вам не хватає {amount_shortage} 💎"
+  pay-session:
+    color: "#00ff00"
+    text:
+      - "Ви не можете взаємодіяти з цією сесією!"
+  give-me:
+    color: "#00ff00"
+    text:
+      - "Ви видали {amount} 💎 пользователю {target} його баланс тепер {balance} 💎"
+  give-target:
+    color: "#00ff00"
+    text:
+      - "Адміністратор {admin} видал вам {amount} 💎 ваш баланс тепер {balance} 💎"
+  take-me:
+    color: "#00ff00"
+    text:
+      - "Ви забрали {amount} 💎пользователю {target} його баланс тепер {balance} 💎"
+  take-target:
+    color: "#00ff00"
+    text:
+      - "Адміністратор {admin} забрав у вас {amount} 💎 ваш баланс тепер {balance} 💎"
+  take-no:
+    color: "#00ff00"
+    text:
+      - "У пользователя {target} нет {amount} 💎 його баланс {balance} 💎"
+  reset-me:
+    color: "#00ff00"
+    text:
+      - "Ви успішно видалили кошельок {target}"
+  reset-target:
+    color: "#00ff00"
+    text:
+      - "Адміністратор {admin} видалив ваш кошельок!"
+  reset-no:
+    color: "#00ff00"
+    text:
+      - "Пользователь {target} не має кошелька!"
+  target-bot:
+    color: "#00ff00"
+    text:
+      - "Пользователь {target} не являється учасником, це бот!"
